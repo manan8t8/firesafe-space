@@ -2,7 +2,7 @@
 
 An interactive, AI-powered dashboard that **summarizes, ranks and interprets** NASA's microgravity combustion investigations (from the PSI repository) to support fire safety for human space exploration. Built for the 2026 NASA Space Apps Challenge.
 
-**Live app:** <your Streamlit link>
+**Live app:** https://firesafe-space.streamlit.app/
 **Demo video:** <your YouTube link>
 
 ## The problem
