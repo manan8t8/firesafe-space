@@ -1,0 +1,386 @@
+[
+ {
+  "id": "BASS",
+  "name": "BASS (Burning and Suppression of Solids)",
+  "family": "Solid fuel flammability",
+  "hardware": "SPICE flow-duct hardware in Microgravity Science Glovebox (MSG); 89 test points",
+  "fuel": "41 samples: thin flat (SIBAL cotton-fiberglass, Nomex, Ultem), thick flat (PMMA, wax-saturated fiberglass), PMMA spheres (1 and 2 cm), candles in ceramic tubes (paraffin, Japan wax)",
+  "o2": "Air (nitrogen added as suppressant)",
+  "o2_max": null,
+  "airflow": "5-50 cm/s co-flow",
+  "measures": "Video, radiometer (flame output), anemometer; flame shape, spread rate, time to extinction vs N2 flow (0-500 cc/min)",
+  "objective": "Tests whether materials burn as well or better in microgravity than in 1g, and how nitrogen suppression works. Guides extinguishing strategies and heat-release models.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 5,
+   "high_o2": 4,
+   "material": 5,
+   "detection": 0,
+   "suppression": 1,
+   "modeling": 4,
+   "earth": 2,
+   "partial_g": 0
+  },
+  "verified": true,
+  "source": "NASA BASS fact sheet",
+  "details": "Finding for design: the best point to apply suppressant is not obvious in microgravity, and a suppressant stream can even make a flame worse by entraining oxygen. Current NASA material screening (NASA-STD-6001 Test 1) is based on 1g behaviour."
+ },
+ {
+  "id": "BASS-II",
+  "name": "BASS-II",
+  "family": "Solid fuel flammability",
+  "hardware": "SPICE flow-duct hardware in MSG",
+  "fuel": "100 samples: acrylic films/sheets, SIBAL fabric, black/clear acrylic rods, section of a large acrylic sphere",
+  "o2": "Varied ambient oxygen (nitrogen vitiation up to 500 cc/min)",
+  "o2_max": null,
+  "airflow": "5-50 cm/s co-flow",
+  "measures": "Radiometer, video; spread rate, flame length, extinction limits, heat release rate, combustion completeness, equivalence ratio",
+  "objective": "Find the worst-case flammability in spacecraft conditions vs the 1g upward-burning test; minimum oxygen and flow where materials burn.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 5,
+   "high_o2": 4,
+   "material": 5,
+   "detection": 0,
+   "suppression": 1,
+   "modeling": 5,
+   "earth": 2,
+   "partial_g": 0
+  },
+  "verified": true,
+  "source": "NASA BASS fact sheet (BASS-II section)",
+  "details": "Results: thin and thick fuel spread rates measured plus a thin-to-thick transition formula. Models predict higher spread rates than observed, so they need improvement. Results will guide material choice for future spacecraft."
+ },
+ {
+  "id": "Saffire",
+  "name": "Saffire-I, -II, -III",
+  "family": "Spacecraft fire demonstration",
+  "hardware": "Free-flying spacecraft vehicle (large-scale)",
+  "fuel": "Solid materials (fabrics, plastics)",
+  "o2": "Spacecraft-relevant atmospheres",
+  "o2_max": null,
+  "airflow": "Controlled flow",
+  "measures": "Large-scale flame spread",
+  "objective": "Spacecraft Fire Safety Demonstration at scale beyond lab tests. Check if full data is in PSI.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 5,
+   "high_o2": 3,
+   "material": 5,
+   "detection": 1,
+   "suppression": 0,
+   "modeling": 3,
+   "earth": 2,
+   "partial_g": 0
+  },
+  "verified": false,
+  "source": "Challenge text / NASA descriptions (to verify)"
+ },
+ {
+  "id": "SAME",
+  "name": "SAME / SAME-R (Smoke Aerosol Measurement Experiment)",
+  "family": "Fire detection",
+  "hardware": "Microgravity Science Glovebox (MSG), Expedition 15 (SAME) and 24 (SAME-R)",
+  "fuel": "Smoke from heated Teflon, Kapton, silicone rubber, cellulose (SAME-R: also cotton, Pyrell) and dibutyl-phthalate on a wick; 30 samples in SAME",
+  "o2": "N/A (overheated materials, pre-fire smoke)",
+  "o2_max": null,
+  "airflow": "Varied airflow, heating temperature and smoke aging time",
+  "measures": "Particle size distribution; number, diameter and mass concentration; TEM images; ISS photoelectric and Shuttle ionization detectors",
+  "objective": "Measure smoke particle sizes in microgravity and test how well ISS and Shuttle smoke detectors work.",
+  "areas": [
+   "Detection"
+  ],
+  "scores": {
+   "habitat": 5,
+   "high_o2": 1,
+   "material": 1,
+   "detection": 5,
+   "suppression": 0,
+   "modeling": 3,
+   "earth": 4,
+   "partial_g": 0
+  },
+  "verified": true,
+  "source": "NASA SAME fact sheet",
+  "details": "Findings: all samples produced many sub-micron particles that ionization detectors catch best, but light-scattering detectors also work well for most cases. Pre-fire overheating can create wider size distributions, so detectors that measure a wide size range may be more reliable. Future detectors should target pre-fire pyrolysis products, not just soot."
+ },
+ {
+  "id": "DAFT",
+  "name": "DAFT / DAFT-2 (Dust and Aerosol Measurement Feasibility Test)",
+  "family": "Fire detection",
+  "hardware": "Same instrument as SAME, used for dust",
+  "fuel": "Dust",
+  "o2": "N/A",
+  "o2_max": null,
+  "airflow": "Cabin-like",
+  "measures": "Dust particle detection",
+  "objective": "Shows the smoke detector can tell dust from smoke, reducing false alarms.",
+  "areas": [
+   "Detection"
+  ],
+  "scores": {
+   "habitat": 3,
+   "high_o2": 0,
+   "material": 0,
+   "detection": 3,
+   "suppression": 0,
+   "modeling": 2,
+   "earth": 3,
+   "partial_g": 0
+  },
+  "verified": false,
+  "source": "Challenge text / NASA descriptions (to verify)"
+ },
+ {
+  "id": "FLEX",
+  "name": "FLEX / FLEX-2 (Flame Extinguishment Experiment)",
+  "family": "Fire suppression",
+  "hardware": "Multi-user Droplet Combustion Apparatus (MDCA) in Combustion Integrated Rack (CIR)",
+  "fuel": "Methanol and heptane droplets, 2-5 mm (FLEX-2: 2-4 mm; fuel mixtures, droplet pairs, convective flow, 30-60 tests per group)",
+  "o2": "Oxygen mole fraction 0.10 to 0.50; CO2 or helium suppressant up to about 0.70",
+  "o2_max": null,
+  "airflow": "Still (FLEX-2 adds sub-buoyant flow tests)",
+  "measures": "Droplet burning rate, extinction, flame radiation, soot concentration and temperature; pressure 0.5-1.0 atm",
+  "objective": "Quantify how well inert gases suppress flames and find the limiting oxygen index across candidate cabin pressures and oxygen levels.",
+  "areas": [
+   "Suppression"
+  ],
+  "scores": {
+   "habitat": 4,
+   "high_o2": 2,
+   "material": 0,
+   "detection": 0,
+   "suppression": 5,
+   "modeling": 3,
+   "earth": 2,
+   "partial_g": 0
+  },
+  "verified": true,
+  "source": "NASA FLEX fact sheet",
+  "details": "Low pressure data (0.5 atm) supports the strategy of venting a cabin to space to put out a fire."
+ },
+ {
+  "id": "CFI",
+  "name": "CFI (Cool Flames Investigation)",
+  "family": "Droplet combustion",
+  "hardware": "MDCA in CIR",
+  "fuel": "Liquid fuel droplets",
+  "o2": "Varied",
+  "o2_max": null,
+  "airflow": "Still",
+  "measures": "Cool-flame behaviour",
+  "objective": "Study low-temperature cool flames. Less direct for fire safety.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 2,
+   "high_o2": 1,
+   "material": 0,
+   "detection": 0,
+   "suppression": 0,
+   "modeling": 3,
+   "earth": 1,
+   "partial_g": 0
+  },
+  "verified": false,
+  "source": "Challenge text / NASA descriptions (to verify)"
+ },
+ {
+  "id": "CFI-G",
+  "name": "ACME CFI-G (Cool Flames Investigation with Gases)",
+  "family": "Gas flames (ACME)",
+  "hardware": "ACME in CIR",
+  "fuel": "Gaseous fuel (e.g. propane) from a porous spherical burner",
+  "o2": "Up to 85% oxygen",
+  "o2_max": 85,
+  "airflow": "Still",
+  "measures": "Quasi-steady spherical cool diffusion flame structure and extinction",
+  "objective": "First steady spherical cool diffusion flames; challenge text says tests reached up to 85% oxygen.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 4,
+   "high_o2": 5,
+   "material": 2,
+   "detection": 0,
+   "suppression": 0,
+   "modeling": 4,
+   "earth": 1,
+   "partial_g": 0
+  },
+  "verified": false,
+  "source": "NASA ACME fact sheet and challenge text"
+ },
+ {
+  "id": "BRE",
+  "name": "ACME BRE (Burning Rate Emulator)",
+  "family": "Gas flames (ACME)",
+  "hardware": "ACME modular hardware in CIR (about 90 L chamber)",
+  "fuel": "Flat porous burner fed gaseous fuel, emulating paper, plastic and alcohol burning",
+  "o2": "Varied",
+  "o2_max": null,
+  "airflow": "Still atmosphere",
+  "measures": "Surface temperature, burner heat flux (2 heat flux transducers), flow rate, video",
+  "objective": "Fire prevention: ignition and extinction behaviour, and whether existing flammability tests are valid in low and partial gravity.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 4,
+   "high_o2": 2,
+   "material": 4,
+   "detection": 0,
+   "suppression": 0,
+   "modeling": 4,
+   "earth": 1,
+   "partial_g": 0
+  },
+  "verified": true,
+  "source": "NASA ACME fact sheet"
+ },
+ {
+  "id": "E-FIELD",
+  "name": "ACME E-FIELD Flames",
+  "family": "Gas flames (ACME)",
+  "hardware": "ACME in CIR; electrode mesh up to +/-10 kV at 35 or 50 mm",
+  "fuel": "Laminar coflow diffusion flame (gaseous fuel)",
+  "o2": "Air with varied fuel dilution",
+  "o2_max": null,
+  "airflow": "Coflow",
+  "measures": "Ion current through the flame, flame response time to electric forcing",
+  "objective": "How electric fields change flame shape and limits. Listed in this challenge as a partial-gravity proxy.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 3,
+   "high_o2": 1,
+   "material": 1,
+   "detection": 0,
+   "suppression": 1,
+   "modeling": 3,
+   "earth": 1,
+   "partial_g": 4
+  },
+  "verified": true,
+  "source": "NASA ACME fact sheet"
+ },
+ {
+  "id": "SPICE",
+  "name": "SPICE (Smoke Point In Co-flow Experiment)",
+  "family": "Gas flames (smoke/soot)",
+  "hardware": "MSG, fan-driven flow duct",
+  "fuel": "Gaseous fuel",
+  "o2": "Varied",
+  "o2_max": null,
+  "airflow": "Co-flow",
+  "measures": "Smoke point, soot production",
+  "objective": "How much soot/smoke flames make, which feeds detection design.",
+  "areas": [
+   "Detection"
+  ],
+  "scores": {
+   "habitat": 3,
+   "high_o2": 1,
+   "material": 1,
+   "detection": 2,
+   "suppression": 0,
+   "modeling": 4,
+   "earth": 2,
+   "partial_g": 0
+  },
+  "verified": false,
+  "source": "Challenge text / NASA descriptions (to verify)"
+ },
+ {
+  "id": "SLICE",
+  "name": "SLICE (Structure & Liftoff In Combustion Experiment)",
+  "family": "Gas flames",
+  "hardware": "MSG, fan-driven flow duct",
+  "fuel": "Gaseous fuel",
+  "o2": "Varied",
+  "o2_max": null,
+  "airflow": "Varied",
+  "measures": "Flame structure and liftoff",
+  "objective": "Flame stability and liftoff. Useful for models, indirect for safety.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 2,
+   "high_o2": 1,
+   "material": 0,
+   "detection": 0,
+   "suppression": 0,
+   "modeling": 3,
+   "earth": 1,
+   "partial_g": 0
+  },
+  "verified": false,
+  "source": "Challenge text / NASA descriptions (to verify)"
+ },
+ {
+  "id": "BASS-M",
+  "name": "BASS-M (Burning and Suppression of Solids-Milliken)",
+  "family": "Solid fuel flammability",
+  "hardware": "SPICE flow-duct hardware in MSG",
+  "fuel": "44 cotton textile samples, 11 textile types incl. 10 flame-retardant treated",
+  "o2": "Air",
+  "o2_max": null,
+  "airflow": "5-50 cm/s co-flow",
+  "measures": "Radiometer, video; self-extinguishing ability, time to extinction",
+  "objective": "How low gravity changes the behaviour of flame-retardant textiles compared with the terrestrial upward-burning test.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 5,
+   "high_o2": 1,
+   "material": 5,
+   "detection": 0,
+   "suppression": 1,
+   "modeling": 3,
+   "earth": 3,
+   "partial_g": 0
+  },
+  "verified": true,
+  "source": "NASA BASS fact sheet (BASS-M section)",
+  "details": "Flame-retardant textiles are used in spacecraft and on Earth, so results help both material testing procedures and materials science."
+ },
+ {
+  "id": "CLD Flame",
+  "name": "ACME CLD Flame (Coflow Laminar Diffusion Flame)",
+  "family": "Gas flames (ACME)",
+  "hardware": "ACME in CIR",
+  "fuel": "Methane and ethylene in air coflow",
+  "o2": "Air",
+  "o2_max": null,
+  "airflow": "Varied injection velocity and fuel dilution",
+  "measures": "Flame structure, temperature, soot volume fraction (color imaging, pyrometry, extinction)",
+  "objective": "Sooty flames and highly diluted near-extinction flames, for chemical kinetics and soot models.",
+  "areas": [
+   "Prevention"
+  ],
+  "scores": {
+   "habitat": 3,
+   "high_o2": 1,
+   "material": 1,
+   "detection": 1,
+   "suppression": 1,
+   "modeling": 5,
+   "earth": 2,
+   "partial_g": 0
+  },
+  "verified": true,
+  "source": "NASA ACME fact sheet",
+  "details": "Microgravity flames contain 5 to 8 times more soot than equivalent 1g flames, and highly diluted flames are more stable than in 1g, extending dilution limits."
+ }
+]
