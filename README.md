@@ -3,7 +3,7 @@
 An interactive, AI-powered dashboard that **summarizes, ranks and interprets** NASA's microgravity combustion investigations (from the PSI repository) to support fire safety for human space exploration. Built for the 2026 NASA Space Apps Challenge.
 
 **Live app:** https://firesafe-space.streamlit.app/
-**Demo video:** <your YouTube link>
+**Demo :** https://drive.google.com/file/d/18HB9FVwm_I7L-bBV1e6dgYREfx9sLiys/view?usp=drive_link
 
 ## The problem
 NASA has years of ISS flame and fire experiments, but the data is hard to find, compare and interpret. Fire is one of the most dangerous risks in spacecraft, and future Moon habitats will likely use 30%+ oxygen, which makes materials far more flammable.
@@ -37,4 +37,4 @@ Optional AI: set `GEMINI_API_KEY` (free key from Google AI Studio) or `ANTHROPIC
 - [A Researcher's Guide to ISS Combustion Science](https://www.nasa.gov/missions/station/a-researchers-guide-to-combustion-science/)
 
 ## Author
-Abdul Manan, BS Artificial Intelligence, Emerson University Multan
+Abdul Manan, BS Artificial Intelligence
